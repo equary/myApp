@@ -1,4 +1,10 @@
 MyApp::Application.routes.draw do
+  match '/about', :to => 'pages#about'
+  match '/contact', :to => 'pages#contact'
+  match '/help', :to => 'pages#help'
+  match '/home', :to => 'pages#home'
+  match '/', :to => 'pages#home'
+  
   get "pages/home"
   get "pages/about"
   get "pages/contact"
