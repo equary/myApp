@@ -1,2 +1,6 @@
 <h1>Users#index</h1>
-<%= @all %>
+<ol>
+<%= @all.each do |i| %> 
+<li> <%= i.name %>, <%= i.email%> </li>
+<%end%>
+</ol>
